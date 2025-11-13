@@ -1,0 +1,114 @@
+/* ========================================================= */
+/* HOME.CSS - ESTILOS PARA A TELA INICIAL */
+/* ========================================================= */
+
+.home-main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* --------------------------------------------------------- */
+/* 1. ÁREA DE PROMOÇÃO DE LOGIN/CADASTRO */
+/* --------------------------------------------------------- */
+.login-promo-area {
+    background-color: var(--color-orange);
+    color: white;
+    padding: 25px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-promo-area h2 {
+    margin-top: 0;
+    font-size: 24px;
+}
+
+.login-promo-area p {
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.login-buttons a {
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+
+.login-buttons .btn-primary {
+    background-color: var(--color-darkblue);
+    color: white;
+    border: 2px solid var(--color-darkblue);
+}
+
+.login-buttons .btn-secondary {
+    background-color: transparent;
+    color: var(--color-darkblue);
+    border: 2px solid var(--color-darkblue);
+}
+
+/* --------------------------------------------------------- */
+/* 2. RECOMENDAÇÕES E GRID */
+/* --------------------------------------------------------- */
+.recommendation-title {
+    color: var(--color-darkblue);
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.recommendation-grid {
+    display: grid;
+    /* 3 colunas em telas grandes, flexível em telas menores */
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+    gap: 30px;
+    padding-bottom: 50px;
+}
+
+.card-recommendation {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s;
+    text-align: center;
+}
+
+.card-recommendation:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card-image-placeholder {
+    width: 100%;
+    height: 150px;
+    background-color: #eee;
+    background-size: cover;
+    background-position: center;
+    border-bottom: 4px solid var(--color-primary);
+}
+
+.card-recommendation h3 {
+    color: var(--color-darkblue);
+    font-size: 18px;
+    padding: 15px 15px 10px 15px;
+    min-height: 70px;
+}
+
+.card-recommendation .small-btn {
+    display: block;
+    width: calc(100% - 30px);
+    margin: 0 15px 15px 15px;
+    padding: 10px;
+    font-size: 14px;
+    background-color: var(--color-primary);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}

@@ -1,0 +1,116 @@
+/* ========================================================= */
+/* LOGIN-REGISTRO.CSS - ESTILOS PARA TELAS DE ACESSO E SPLASH */
+/* ========================================================= */
+
+/* --------------------------------------------------------- */
+/* 1. ESTILO DA PRIMEIRA PÁGINA (INDEX.HTML / SPLASH) */
+/* --------------------------------------------------------- */
+.login-page-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+
+.splash-logo-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+.splash-logo-icon {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+}
+
+/* Sobrescreve estilos para o tamanho grande do splash */
+.splash-logo-icon.logo-icon-new {
+    width: 100px;
+    height: 100px;
+}
+.splash-logo-icon.logo-icon-new i {
+    font-size: 48px !important;
+    transform: rotate(-90deg) translateY(-5px) !important;
+}
+
+.splash-logo-name {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.splash-logo-slogan {
+    font-size: 18px;
+    opacity: 0.8;
+}
+
+
+/* --------------------------------------------------------- */
+/* 2. ESTILO DO CARD DE LOGIN/CADASTRO */
+/* --------------------------------------------------------- */
+.auth-container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 400px;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.auth-container h1 {
+    color: var(--color-darkblue);
+    margin-bottom: 25px;
+    font-size: 28px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="password"],
+.form-group input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.auth-container .btn-primary {
+    width: 100%;
+    padding: 12px;
+    font-size: 18px;
+    margin-top: 10px;
+    text-transform: uppercase;
+}
+
+.link-secondary {
+    display: block;
+    margin-top: 20px;
+    color: var(--color-secondary);
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.link-secondary:hover {
+    text-decoration: underline;
+}

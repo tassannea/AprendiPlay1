@@ -1,0 +1,167 @@
+/* ========================================================= */
+/* BASE.CSS - DEFINIÇÕES GLOBAIS, CORES E RESET */
+/* ========================================================= */
+
+:root {
+    /* Paleta de Cores do AprendiPlay */
+    --color-primary: #5cb85c;      /* Verde (para destaque e botões principais) */
+    --color-secondary: #007bff;    /* Azul Claro (para links e elementos secundários) */
+    --color-darkblue: #022b45;     /* Azul Escuro Quase Preto (para textos e fundo) */
+    --color-orange: #f0ad4e;       /* Laranja/Amarelo (para promoções e avisos) */
+    --color-lightgrey: #f7f7f7;    /* Cinza Claro */
+    --color-white: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: var(--color-lightgrey);
+    color: #333;
+    line-height: 1.6;
+    min-height: 100vh;
+}
+
+/* Estilo para links e botões */
+a {
+    text-decoration: none;
+    color: var(--color-secondary);
+}
+
+.btn-primary {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    padding: 10px 15px;
+    border-radius: 5px;
+    display: inline-block;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #4a944a;
+}
+
+.btn-secondary {
+    background-color: var(--color-secondary);
+    color: var(--color-white);
+    padding: 10px 15px;
+    border-radius: 5px;
+    display: inline-block;
+    border: 2px solid var(--color-secondary);
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-secondary:hover {
+    background-color: transparent;
+    color: var(--color-secondary);
+}
+
+
+/* --------------------------------------------------------- */
+/* 2. ESTILO PADRÃO DO HEADER (em páginas de conteúdo/home) */
+/* --------------------------------------------------------- */
+.app-header {
+    background-color: var(--color-white);
+    padding: 15px 20px;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.header-search {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    max-width: 400px;
+    margin-right: 20px;
+}
+
+.header-search input {
+    width: 100%;
+    padding: 8px 15px 8px 40px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+.header-search i {
+    position: absolute;
+    left: 15px;
+    color: #999;
+}
+
+.header-menu a {
+    color: var(--color-darkblue);
+    font-size: 20px;
+    margin-left: 15px;
+}
+.header-menu a:hover {
+    color: var(--color-primary);
+}
+
+
+/* --------------------------------------------------------- */
+/* 3. NOVA LOGO (TRIÂNGULO DEGRADÊ) */
+/* --------------------------------------------------------- */
+.logo-area {
+    display: flex;
+    align-items: center;
+    margin: 0 20px;
+    flex-shrink: 0;
+}
+
+.logo-text-container {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    line-height: 1.1;
+}
+
+.logo-name {
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--color-darkblue);
+}
+
+.logo-slogan {
+    font-size: 10px;
+    color: #666;
+}
+
+/* NOVO ESTILO PARA A LOGO (TRIÂNGULO DEGRADÊ) */
+.logo-icon-new {
+    width: 30px;
+    height: 30px;
+    /* Gradiente para simular a cor da imagem que você fixou */
+    background: linear-gradient(135deg, var(--color-secondary), var(--color-primary)); 
+    transform: rotate(90deg); 
+    position: relative;
+    /* Usa clip-path para dar a forma de triângulo perfeito */
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5px; 
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); 
+}
+
+/* Estilo do ícone de play branco (dentro do triângulo) */
+.logo-icon-new i {
+    font-size: 14px;
+    color: white;
+    /* Desfaz a rotação e ajusta a posição do ícone de play */
+    transform: rotate(-90deg) translateY(-2px) !important; 
+}

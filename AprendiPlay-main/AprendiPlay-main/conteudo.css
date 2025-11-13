@@ -1,0 +1,123 @@
+/* ========================================================= */
+/* CONTEUDO.CSS - ESTILOS PARA AS PÁGINAS DE RECOMENDAÇÕES */
+/* ========================================================= */
+
+.content-main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.article-card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    line-height: 1.6;
+}
+
+.article-card h1 {
+    color: var(--color-darkblue);
+    font-size: 32px;
+    border-bottom: 3px solid var(--color-primary);
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.article-card h2 {
+    color: var(--color-secondary);
+    font-size: 24px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.summary-text {
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 25px;
+}
+
+.article-card p {
+    margin-bottom: 15px;
+    color: #444;
+}
+
+/* Estilo para as caixas de imagem/placeholder */
+.image-placeholder {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    margin: 20px 0;
+    color: #666;
+    text-align: center;
+}
+
+.image-placeholder i {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.wide-image-placeholder {
+    height: 200px;
+    border: 1px dashed #ccc;
+}
+
+/* Estilo para listas */
+.list-container h3 {
+    color: var(--color-darkblue);
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.list-container ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.list-container li {
+    background-color: #f9f9f9;
+    padding: 10px 15px;
+    border-left: 4px solid var(--color-orange);
+    margin-bottom: 8px;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+/* Estilo para Caixa de Chamada (Recomendação de Vídeo) */
+.callout-box {
+    border: 1px solid var(--color-secondary);
+    border-left: 8px solid var(--color-secondary);
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #f0f7ff;
+    margin-top: 40px;
+}
+
+.callout-box h2 {
+    color: var(--color-secondary);
+    margin-top: 0;
+    font-size: 20px;
+}
+
+.video-link {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    color: #c4302b; /* Cor do Youtube */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.video-link i {
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.video-link:hover {
+    text-decoration: underline;
+}
